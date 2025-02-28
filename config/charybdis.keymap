@@ -124,8 +124,8 @@
             bindings = <
 &none  &none  &none    &none     &none     &none       &none       &none    &none     &none     &none  &none
 &none  &none  &none    &none     &none     &none       &none       &none    &none     &none     &none  &none
-&none  &none  &none    &none     &none     &inc_dpi    &none       &none    &none     &none     &none  &none
-&none  &none  &none    &none     &none     &dec_dpi    &none       &none    &none     &none     &none  &none
+&none  &none  &none    &none     &none     &none    &none       &none    &none     &none     &none  &none
+&none  &none  &none    &none     &none     &none    &none       &none    &none     &none     &none  &none
                        &mkp MB1  &mo 8     &mo 9       &none       &none
                                  &mkp MB3  &mkp MB2    &none
             >;
@@ -160,8 +160,8 @@
             bindings = <
 &none  &none  &none    &none     &none     &none       &none  &none  &none  &none  &none  &none
 &none  &none  &none    &none     &none     &none       &none  &none  &none  &none  &none  &none
-&none  &none  &none    &none     &none     &inc_dpi    &none  &none  &none  &none  &none  &none
-&none  &none  &none    &none     &none     &dec_dpi    &none  &none  &none  &none  &none  &none
+&none  &none  &none    &none     &none     &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none    &none     &none     &none    &none  &none  &none  &none  &none  &none
                        &mkp MB1  &trans    &mo 9       &none  &none
                                  &mkp MB3  &mkp MB2    &none
             >;
@@ -174,8 +174,8 @@
             bindings = <
 &none  &none  &none    &none     &none     &none       &none  &none  &none  &none  &none  &none
 &none  &none  &none    &none     &none     &none       &none  &none  &none  &none  &none  &none
-&none  &none  &none    &none     &none     &inc_dpi    &none  &none  &none  &none  &none  &none
-&none  &none  &none    &none     &none     &dec_dpi    &none  &none  &none  &none  &none  &none
+&none  &none  &none    &none     &none     &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none    &none     &none     &none    &none  &none  &none  &none  &none  &none
                        &mkp MB1  &mo 8     &trans      &none  &none
                                  &mkp MB3  &mkp MB2    &none
             >;
