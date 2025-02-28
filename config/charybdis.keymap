@@ -32,32 +32,6 @@
             quick-tap-ms = <150>;
             flavor = "tap-preferred";
         };
-
-        // Define the drag scroll behavior
-        drag_scroll: drag_scroll {
-            compatible = "zmk,behavior-sensor-rotate-key-press";
-            label = "DRAG_SCROLL";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp DOWN_ARROW>, <&kp UP_ARROW>;
-        };
-
-        // Define the sniping mode behavior
-        snipe: snipe {
-            compatible = "zmk,behavior-sensor-rotate-key-press";
-            label = "SNIPE";
-            #sensor-binding-cells = <0>;
-            bindings = <&inc_dec_kp DOWN UP>;
-        };
-        
-        // Layer-tap but for trackball bindings
-        tb_mo: trackball_momentary_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TRACKBALL_MOMENTARY_LAYER";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&tog>, <&mkp>;
-        };
     };
 
     keymap {
