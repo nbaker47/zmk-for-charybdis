@@ -26,7 +26,7 @@
 
         Base {
             bindings = <
-&kp MINUS   &kp N1  &kp N2  &kp N3     &kp N4          &kp N5              &kp N6        &kp N7     &kp N8     &kp N9   &kp N0       &kp BSPC
+&kp EQUAL   &kp N1  &kp N2  &kp N3     &kp N4          &kp N5              &kp N6        &kp N7     &kp N8     &kp N9   &kp N0       &kp MINUS
 &kp TAB     &kp Q   &kp W   &kp E      &kp R           &kp T               &kp Y         &kp U      &kp I      &kp O    &kp P        &kp BACKSLASH
 &kp ESCAPE  &kp A   &kp S   &kp D      &kp F           &kp G               &kp H         &kp J      &kp K      &kp L    &kp SEMI     &kp APOS
 &kp GRAVE   &kp Z   &kp X   &kp C      &kp V           &kp B               &kp N         &kp M      &kp COMMA  &kp DOT  &lt 0 SLASH  &kp DELETE
@@ -37,7 +37,7 @@
             trackball-bindings = <&tmv_coarse>;
         };
 
-        layer_1 {
+        nav {
             bindings = <
 &none  &none    &none           &none         &none          &none    &none          &none       &none              &none          &none  &none
 &none  &none    &kp HOME        &kp UP_ARROW  &kp END        &none    &none          &none       &none              &none          &none  &none
@@ -48,7 +48,7 @@
             >;
         };
 
-        nav {
+        numbers {
             bindings = <
 &none    &none   &none   &none      &none      &none        &none      &none     &none      &none   &none    &none
 &kp F12  &kp F1  &kp F2  &kp F3     &kp F4     &kp F5       &kp F6     &kp F7    &kp F8     &kp F9  &kp F10  &kp F11
@@ -83,12 +83,34 @@
 
         mouse {
             bindings = <
-&none  &none  &none  &none     &none     &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none     &none     &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none     &none     &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none     &none     &none    &none  &none  &none  &none  &none  &none
-                     &mkp MB1  &mkp MB2  &none    &none  &none
-                               &none     &none    &none
+&none  &none  &none  &none     &none     &none       &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none     &none     &none       &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none     &none     &none       &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none     &none     &none       &none  &none  &none  &none  &none  &none
+                     &mkp MB1  &mkp MB4  &mkp MB2    &none  &none
+                               &mkp MB3  &mkp MB5    &none
+            >;
+        };
+
+        gaming {
+            bindings = <
+&kp EQUAL  &kp N1  &kp N2  &kp N3    &kp N4          &kp N5        &kp N6        &kp N7     &kp N8     &kp N9   &kp N0    &kp MINUS
+&kp TAB    &kp Q   &kp W   &kp E     &kp R           &kp T         &kp Y         &kp U      &kp I      &kp O    &kp P     &kp BSLH
+&kp ESC    &kp A   &kp S   &kp D     &kp F           &kp G         &kp H         &kp J      &kp K      &kp L    &kp SEMI  &kp APOS
+&kp GRAVE  &kp Z   &kp X   &kp C     &kp V           &kp B         &kp N         &kp M      &kp COMMA  &kp DOT  &kp FSLH  &trans
+                           &mkp MB1  &kp BSPC        &kp DELETE    &kp ENTER     &kp SPACE
+                                     &kp LEFT_SHIFT  &kp LCTRL     &kp LEFT_ALT
+            >;
+        };
+
+        gamingshifted {
+            bindings = <
+&kp MINUS  &kp EQUAL  &kp N1  &kp N2     &kp N3     &kp N4            &kp N5         &kp N6         &kp N7  &kp N8     &kp N9   &kp N0
+&kp BSLH   &kp TAB    &kp Q   &kp W      &kp E      &kp R             &kp T          &kp Y          &kp U   &kp I      &kp O    &kp P
+&kp APOS   &kp ESC    &kp A   &kp S      &kp D      &kp F             &kp G          &kp H          &kp J   &kp K      &kp L    &kp SEMI
+&kp F5     &kp GRAVE  &kp Z   &kp X      &kp C      &kp V             &kp B          &kp N          &kp M   &kp COMMA  &kp DOT  &kp FSLH
+                              &kp LCTRL  &kp SPACE  &kp LEFT_SHIFT    &kp DELETE     &kp BACKSPACE
+                                         &trans     &trans            &kp RIGHT_ALT
             >;
         };
     };
