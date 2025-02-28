@@ -1,8 +1,8 @@
-#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/mouse.h>
+
 
 &lt {
     tapping-term-ms = <200>;
@@ -122,12 +122,12 @@
 
         mouse {
             bindings = <
-&none  &none  &none   &none     &none     &none       &none  &none  &none  &none  &none  &none
-&none  &none  &none   &none     &none     &none       &none  &none  &none  &none  &none  &none
-&none  &none  &none   &none     &none     &none       &none  &none  &none  &none  &none  &none
-&none  &none  &none   &none     &none     &none       &none  &none  &none  &none  &none  &none
-                      &mkp MB1  &mo 8     &mo 9       &none  &none
-                                &mkp MB3  &mkp MB5    &none
+&none  &none  &none    &none     &none     &none       &none       &none    &none     &none     &none  &none
+&none  &none  &none    &none     &none     &none       &none       &none    &none     &none     &none  &none
+&none  &none  &none    &none     &none     &inc_dpi    &none       &none    &none     &none     &none  &none
+&none  &none  &none    &none     &none     &dec_dpi    &none       &none    &none     &none     &none  &none
+                       &mkp MB1  &mo 8     &mo 9       &none       &none
+                                 &mkp MB3  &mkp MB2    &none
             >;
             
             trackball-bindings = <&tmv_coarse>;
@@ -158,12 +158,12 @@
         // New drag scroll layer (layer 8)
         drag_scroll_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                     &none  &none  &trans   &none  &none
-                            &none  &none    &none
+&none  &none  &none    &none     &none     &none       &none  &none  &none  &none  &none  &none
+&none  &none  &none    &none     &none     &none       &none  &none  &none  &none  &none  &none
+&none  &none  &none    &none     &none     &inc_dpi    &none  &none  &none  &none  &none  &none
+&none  &none  &none    &none     &none     &dec_dpi    &none  &none  &none  &none  &none  &none
+                       &mkp MB1  &trans    &mo 9       &none  &none
+                                 &mkp MB3  &mkp MB2    &none
             >;
             
             trackball-bindings = <&tsl>;
@@ -172,12 +172,12 @@
         // New sniping layer (layer 9)
         sniping_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                     &none  &none  &trans   &none  &none
-                            &none  &none    &none
+&none  &none  &none    &none     &none     &none       &none  &none  &none  &none  &none  &none
+&none  &none  &none    &none     &none     &none       &none  &none  &none  &none  &none  &none
+&none  &none  &none    &none     &none     &inc_dpi    &none  &none  &none  &none  &none  &none
+&none  &none  &none    &none     &none     &dec_dpi    &none  &none  &none  &none  &none  &none
+                       &mkp MB1  &mo 8     &trans      &none  &none
+                                 &mkp MB3  &mkp MB2    &none
             >;
             
             trackball-bindings = <&tmv_fine>;
