@@ -40,8 +40,8 @@
             mode = "scroll-mode";
             flavor = "default";
             scale_mode = "dividor";
-            scale_factor = <2>;   
-            smoothing;
+            scale_factor = <1>;   
+            // smoothing;
 		};
 	};
 
