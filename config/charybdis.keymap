@@ -34,13 +34,13 @@
         }; 
         
 		tsl_custom: behavior_trackball_scroll {
-            compatible = "zmk,behavior-point-device-incremental";
-            label = "TRACKBALL_SCROLL_FINE";
-            #trackball-binding-cells = <0>;
+			compatible = "zmk,behavior-point-device-incremental";
+			label = "TRACKBALL_SCROLL_FINE";
+			#trackball-binding-cells = <0>;
             mode = "scroll-mode";
             flavor = "default";
-            scale_mode = "multiplier";
-            scale_factor = <2>;         // Multiplies movement by 2
+            scale_mode = "dividor";
+            scale_factor = <10>;
 		};
 	};
 
