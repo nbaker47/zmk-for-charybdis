@@ -50,7 +50,7 @@
 			#trackball-binding-cells = <0>;
             mode = "move-mode";
             flavor = "default";
-            scale_mode = "multiply";
+            scale_mode = "multiplier";
             scale_factor = <4>;
 		};
 
