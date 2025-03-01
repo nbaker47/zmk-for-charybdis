@@ -39,8 +39,8 @@
             mode = "scroll-mode";
             flavor = "default";
             scale_mode = "dividor";
-            scale_factor = <4>;   
-            smoothing;
+            scale_factor = <1>;   
+            // smoothing;
 		};
 
 		tmv_custom: behavior_trackball_move_coarse {
