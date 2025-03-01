@@ -39,8 +39,8 @@
             mode = "scroll-mode";
             flavor = "default";
             scale_mode = "dividor";
-            scale_factor = <1>;   
-            // smoothing;
+            scale_factor = <4>;   
+            smoothing;
 		};
 
 		tmv_custom: behavior_trackball_move_coarse {
@@ -51,6 +51,16 @@
             flavor = "default";
             scale_mode = "multiplier";
             scale_factor = <4>;
+		};
+
+        tmv_fine_custom: behavior_trackball_move_fine {
+			compatible = "zmk,behavior-point-device-incremental";
+			label = "TRACKBALL_MOVE_FINE";
+			#trackball-binding-cells = <0>;
+            mode = "move-mode";
+            flavor = "default";
+            scale_mode = "dividor";
+            scale_factor = <1>;
 		};
 
 	};
@@ -178,7 +188,7 @@ keymap {
                                &mkp MB3  &none       &none
             >;
 
-            trackball-bindings = <&tmv_fine>;
+            trackball-bindings = <&tmv_fine_custom>;
         };
     };
 };
