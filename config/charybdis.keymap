@@ -123,12 +123,11 @@ keymap {
 &none  &none  &none  &none     &none     &none       &none  &none  &none  &none  &none  &none
 &none  &none  &none  &mo 9     &none     &none       &none  &none  &none  &none  &none  &none
                      &mkp MB2  &mo 8     &mkp MB1    &none  &none
-                               &mkp MB3  &mo 9       &none
+                               &mkp MB3  &none       &none
             >;
 
             trackball-bindings = <&tmv_coarse>;
         };
-
 
         gaming {
             bindings = <
@@ -159,9 +158,9 @@ keymap {
 &none  &none  &none  &none     &none     &none       &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none     &none     &none       &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none     &none     &none       &none  &none  &none  &none  &none  &none
-&none  &none  &none  &mo 9     &none     &none       &none  &none  &none  &none  &none  &none
-                     &mkp MB2  &trans    &mkp MB1    &none  &none
-                               &mkp MB3  &mo 9       &none
+&none  &none  &none  &none     &none     &none       &none  &none  &none  &none  &none  &none
+                     &mkp MB2  &none     &mkp MB1    &none  &none
+                               &mkp MB3  &none       &none
             >;
 
             trackball-bindings = <&tsl_custom>;
@@ -174,9 +173,9 @@ keymap {
 &none  &none  &none  &none     &none     &none       &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none     &none     &none       &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none     &none     &none       &none  &none  &none  &none  &none  &none
-&none  &none  &none  &mo 9     &none     &none       &none  &none  &none  &none  &none  &none
-                     &mkp MB2  &mo 8     &mkp MB1    &none  &none
-                               &mkp MB3  &mo 9       &none
+&none  &none  &none  &none     &none     &none       &none  &none  &none  &none  &none  &none
+                     &mkp MB2  &none     &mkp MB1    &none  &none
+                               &mkp MB3  &none       &none
             >;
 
             trackball-bindings = <&tmv_fine>;
