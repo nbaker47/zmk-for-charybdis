@@ -43,6 +43,17 @@
             scale_factor = <2>;   
             // smoothing;
 		};
+
+		tmv_custom: behavior_trackball_move_coarse {
+			compatible = "zmk,behavior-point-device-incremental";
+			label = "TRACKBALL_MOVE_COARSE";
+			#trackball-binding-cells = <0>;
+            mode = "move-mode";
+            flavor = "default";
+            scale_mode = "multiply";
+            scale_factor = <4>;
+		};
+
 	};
 
 keymap {
@@ -58,7 +69,7 @@ keymap {
                                                   &kp LEFT_SHIFT    &kp LEFT_CONTROL    &kp LEFT_ALT
             >;
 
-            trackball-bindings = <&tmv_coarse>;
+            trackball-bindings = <&tmv_custom>;
         };
 
         nav {
