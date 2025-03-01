@@ -141,7 +141,7 @@ keymap {
                                &mkp MB3  &mo 9       &none
             >;
 
-            trackball-bindings = <&tsl>;
+            trackball-bindings = <&tsl_fine>;
         };
 
         // New sniping layer (layer 9)
