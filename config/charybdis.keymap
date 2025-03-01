@@ -41,6 +41,7 @@
             flavor = "default";
             scale_mode = "dividor";
             scale_factor = <5>;   
+            smoothing;
 		};
 	};
 
