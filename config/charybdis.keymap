@@ -126,7 +126,7 @@ keymap {
                                &mkp MB3  &mo 9       &none
             >;
 
-            trackball-bindings = <&tmv_coarse>;
+            trackball-bindings = <&tmv_custom>;
         };
 
         gaming {
