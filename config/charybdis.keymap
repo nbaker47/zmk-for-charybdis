@@ -118,10 +118,10 @@ keymap {
 
         mouse {
             bindings = <
-&none  &none  &none  &none     &none     &none       &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none     &none     &none       &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none     &none     &none       &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none     &none     &none       &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none     &none     &none       &none  &none         &none           &none  &none  &none
+&none  &none  &none  &none     &none     &none       &none  &none         &none           &none  &none  &none
+&none  &none  &none  &none     &none     &none       &none  &msc SCRL_UP  &msc SCRL_DOWN  &none  &none  &none
+&none  &none  &none  &none     &none     &none       &none  &none         &none           &none  &none  &none
                      &mkp MB2  &mo 8     &mkp MB1    &none  &none
                                &mkp MB3  &mo 9       &none
             >;
