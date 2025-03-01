@@ -31,8 +31,18 @@
             tapping-term-ms = <220>;
             quick-tap-ms = <150>;
             flavor = "tap-preferred";
-        };
-    };
+        }; 
+        
+		tsl_custom: behavior_trackball_scroll {
+			compatible = "zmk,behavior-point-device-incremental";
+			label = "TRACKBALL_SCROLL";
+			#trackball-binding-cells = <0>;
+            mode = "scroll-mode";
+            flavor = "default";
+            scale_mode = "dividor";
+            scale_factor = <5>;
+		};
+	};
 
 keymap {
         compatible = "zmk,keymap";
@@ -141,7 +151,7 @@ keymap {
                                &mkp MB3  &mo 9       &none
             >;
 
-            trackball-bindings = <&tsl_fine>;
+            trackball-bindings = <&tsl_custom>;
         };
 
         // New sniping layer (layer 9)
